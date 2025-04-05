@@ -206,11 +206,12 @@ footer{
 }
 
 footer-top{
-    /* width: 60vw; */
+    width: 100%;
     padding: 50px 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .footer-left{
@@ -248,6 +249,59 @@ ul li a{
     color: inherit;         /* Inherits text color from the parent */
     cursor: default;        /* Changes the cursor to a pointer */
 }
+
+
+
+/* subscribe-content */
+.footer-middle .subscribe-content h2{
+    margin-bottom: 18px;
+}
+
+
+.subscribe-content input[type="email"]{
+    height: 36px;
+    padding: 6px 12px;
+    width: 240px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+    background-color: #dedede;
+}
+.subscribe-content input[type="email"]:focus{
+    border: 2px solid #BDF71E;
+    background-color: #ffffff;
+    color: black;
+}
+
+.subscribe-content button{
+    height: 36px;
+    padding: 6px 12px;
+    background-color: #658419;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.subscribe-content button:hover{
+    background-color: #BDF71E;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.subscribe-content button:active{
+    transform: scale(0.9);
+}
+
+
+
+
+
+
 
 .footer-right .Socials{
     display: flex;
