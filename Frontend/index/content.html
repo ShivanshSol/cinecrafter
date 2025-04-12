@@ -4,15 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cinecrafter</title>
     <!-- fev_icon -->
-     <link rel="icon" href="../images/icons/fev_icon.png">
+    <link rel="icon" href="../images/icons/fev_icon.png">
     <!-- style-links -->
      <link rel="stylesheet" href="../styles/header&footer.css">
-     <link rel="stylesheet" href="../styles/cinecrafter.css">
+     <link rel="stylesheet" href="../styles/content.css">
     <!-- fa-icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 <body>
+    <!-- top-bar -->
     <header>
         <!-- nav-bar -->
         <nav>
@@ -36,18 +37,10 @@
                     <button id="clear-btn" class="clear-btn" title="Clear"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <!-- user icon -->
-                <i class="fa-solid fa-circle-user fa-xl" id="user" onclick="openPage()" ></i>
+                <i class="fa-solid fa-circle-user fa-xl" id="user" onclick="redirect()" ></i>
             </nav-right>
         </nav>
     </header>
-
-
-    <!-- slider -->
-     <section class="slider-container">
-        <div class="slider">
-
-        </div>
-     </section>
 
 
     <!-- page to top button -->
@@ -55,77 +48,82 @@
         <i class="fa-solid fa-chevron-up"></i>
     </div>
 
-
-
+    <!-- main-content -->
     <main>
-        <section class="stream-content">
+        <section class="trailer-section">
+            <div class="hider"></div>
 
-            <!-- new Arrivals -->
+            <iframe
+            src="https://www.youtube.com/embed/6txjTWLoSc8?si=1vE1DqR_ZP1evTnL&amp;
+            autoplay=1 &amp;mute=1&amp;controls=0&amp;modestbranding=1&amp;rel=0 &amp;showinfo=0&amp;loop=1 &amp; thumbnails=0&amp;
+            playlist=1vE1DqR_ZP1evTnL&amp;start=33&amp;end=80"
+            title="YouTube video player" frameborder="0"
+            allow="autoplay; encrypted-media;"
+            allowfullscreen>
+            </iframe>
 
-            <div class="new-arrivals">
-                <h1>New Arrivals</h1>
-                <div class="card-container">
-                    <div class="cards" onclick="openPage()">
-                        <img src="../images/new_arrivals/newArival1.jpeg" alt="New Arrival 1">
-                        <!-- <h3>Movie Title 1</h3> -->
-                    </div>
-                    <div class="cards" onclick="openPage()">
-                        <img src="../images/new_arrivals/newArival2.jpg" alt="New Arrival 2">
-                        <!-- <h3>Movie Title 2</h3> -->
-                    </div>
-                    <div class="cards" onclick="openPage()">
-                        <img src="../images/new_arrivals/newArival3.jpg" alt="New Arrival 3">
-                        <!-- <h3>Movie Title 3</h3> -->
-                    </div>
-                    <div class="cards" onclick="openPage()">
-                        <img src="../images/new_arrivals/newArival4.jpg" alt="New Arrival 4">
-                        <!-- <h3>Movie Title 4</h3> -->
-                    </div>
-                    <div class="cards" onclick="openPage()">
-                        <img src="../images/new_arrivals/newArival5.jpg" alt="New Arrival 5">
-                        <!-- <h3>Movie Title 4</h3> -->
-                    </div>
-            
-                </div>
-            </div>
-
-
-            <div class="whats-trending">
-                <h1>What's Trending</h1>
-                <div></div>
-
-            </div>
-            <div class="coming-soon">
-                <h1>Coming Soon</h1>
-                <div class="card-container">
-                    <div class="cards" onclick="openPage()">
-                        <img src="../images/coming_soon/comingSoon1.jpg" alt="Coming Soon 1">
-                        <!-- <h3>Movie Title 1</h3> -->
-                    </div>
-                    <div class="cards" onclick="openPage()">
-                        <img src="../images/coming_soon/comingSoon1.jpg" alt="Coming Soon 2">
-                        <!-- <h3>Movie Title 2</h3> -->
-                    </div>
-                    <div class="cards" onclick="openPage()">
-                        <img src="../images/coming_soon/comingSoon1.jpg" alt="Coming Soon 3">
-                        <!-- <h3>Movie Title 3</h3> -->
-                    </div>
-                    <div class="cards" onclick="openPage()">
-                        <img src="../images/coming_soon/comingSoon1.jpg" alt="Coming Soon 4">
-                        <!-- <h3>Movie Title 4</h3> -->
-                    </div>
-                    <div class="cards" onclick="openPage()">
-                        <img src="../images/coming_soon/comingSoon1.jpg" alt="Coming Soon 5">
-                        <!-- <h3>Movie Title 5</h3> -->
-                    </div>
-                    
-                </div>
-
-            </div>
+            <!-- <iframe 
+            src="https://player.vimeo.com/video/76979871?autoplay=1&muted=1&background=1&loop=1" 
+            frameborder="0" title="Vimeo video player"
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+            </iframe> -->
 
         </section>
+
+        <section class="about-section">
+            <div class="about-content">
+                <h1 class="title">Havoc</h1>
+                <p class="about">When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.</p>
+                <p class="genre">Genre: Action, Thriller</p>
+                <p class="language">Language: English</p>
+                <p class="release-date">Release Date: 2023-10-12</p>
+                <p class="cast">Cast: Tom Hardy, Timothy Olyphant, Forest Whitaker, and others.</p>
+            </div>
+
+            <div class="about-sidecontent">
+                <div class="rating">
+                    <!-- <h1>Rating</h1> -->
+                    <p class="Imdb">IMDb: 7.0/10</p>
+                    <p class="rotten-tom">Rotten Tomatoes: 85%</p>
+                </div>
+                <div class="action-btns">
+                    <button title="Share" id="shareBtn" class="share-btn btn"><i class="fa-solid fa-share-nodes"></i></button>
+                    <button title="Add to Watchlist" class="add-to-watchlist-btn btn" onclick="addToWatchlist(watchlist)"><i id="watchlist" class="fa-regular fa-square-plus"></i></button>
+                    <button title="Bookmark" class="bookmark-btn btn" onclick="addToBookmark(bookmark)"><i id="bookmark" class="fa-regular fa-bookmark"></i></button>
+                    <button title="Watch On" class="watch-btn" onclick="redirectToWatch()">Watch on <img src="../images/icons/Netflix-icon.jpg" alt=""> </button>
+                </div>
+                <div class="tags-container">
+                    <button type="button" title="Movie" class="tag">Movie</button>
+                    <button type="button" title="Netflix" class="tag">Netflix</button>
+                    <button type="button" title="Action" class="tag">Action</button>
+                    <button type="button" title="Thriller" class="tag">Thriller</button>
+                    <button type="button" title="2025" class="tag">2025</button>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <section class="comment-section">
+            <h1>Comments</h1>
+            <hr>
+            <div class="comments">
+            </div>
+                
+            <div class="comment-box">
+                <div class="user-comment">
+                    <!-- <img src="../images/icons/user.png" alt="user"> -->
+                    <i class="fa-regular fa-circle-user"></i>
+                    <textarea id="comment" placeholder="Add a comment..." required></textarea>
+                </div>
+                <button id="post-btn" class="post-btn">Post</button>
+            </div>
+        </section>
+
     </main>
 
+    <!-- footer -->
     <footer>
         <footer-top>
             <section class="footer-left">
@@ -189,7 +187,7 @@
         </footer-bottom>
     </footer>
 
-    </script src="../scripts/header&footer.js">
-    </script src="../scripts/cinecrafter.js">
+    <script src="../scripts/header&footer.js"></script>
+    <script src="../scripts/content.js"></script>
 </body>
 </html>

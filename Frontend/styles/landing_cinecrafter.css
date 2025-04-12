@@ -205,6 +205,13 @@ main{
     transition: 0.3s;
 }
 
+.subscribe-content button:hover{
+    background-color: #BDF71E;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
 .subscribe-content button:active{
     transform: scale(0.9);
 }
