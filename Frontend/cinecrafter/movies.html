@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cinecrafter</title>
+    <!-- fev_icon -->
+     <link rel="icon" href="../images/icons/fev_icon.png">
+    <!-- style-links -->
+     <link rel="stylesheet" href="../styles/header&footer.css">
+     <link rel="stylesheet" href="../styles/movies.css">
+    <!-- fa-icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <!-- nav-bar -->
+        <nav>
+            <nav-left>
+                <!-- cinecrafter logo -->
+                <div class="logo">
+                    <a href="../cinecrafter/_.html"><img src="../images/icons/logo.png" alt="logo" ></a>
+                </div>
+                <!-- nav menu -->
+                <menu>
+                    <a href="../cinecrafter/home.html">Home</a>
+                    <a href="../cinecrafter/movies.html">Movies</a>
+                    <a href="../cinecrafter/web_shows.html">Web Series</a>
+                    <a href="../cinecrafter">TV Shows</a>
+                </menu>
+            </nav-left>
+            <nav-right>
+                <!-- search bar -->
+                <div class="search">
+                    <input id="search-bar" class="search-bar" type="text" placeholder="Search">
+                    <button id="search-btn" class="search-btn" title="Search"><i class="fa-solid fa-magnifying-glass" for="search-bar"></i></button>
+                    <button id="clear-btn" class="clear-btn" title="Clear"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <!-- user icon -->
+                <i class="fa-solid fa-circle-user fa-xl" id="user" onclick="openPage()" ></i>
+                    <!-- side menu -->
+                <div class="side-menu-container" id="side-menu-container" onclick="toggleSideMenu()">
+                    <div class="side-menu" id="side-menu">
+                    
+                        <ul>
+                            <li>My Account</li>
+                            <li>Watchlists</li>
+                            <li>Bookmarks</li>
+                            <li>Settings</li>
+                            <li>Help</li>
+                        </ul>
+                    
+                    </div>
+                </div>
+            </nav-right>
+        </nav>
+    </header>
+ 
+    <!-- page to top button -->
+    <div class="page-top-btn">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+
+
+
+    <main>
+        <!-- tags -->
+        <section class="tags-container">
+            <div class="movie-tags">
+                <span class="tag" id="trending">Trending</span>
+                <span class="tag" id="top-rated">Top Rated</span>
+                <span class="tag" id="upcoming">Upcoming</span>
+                <span class="tag" id="popular">Popular</span>
+                <span class="tag" id="latest">Latest</span>
+                <span class="tag" id="most-watched">Most Watched</span>   
+            </div> 
+
+            <div class="genre-tags">
+                <span class="tag" id="action">Action</span>
+                <span class="tag" id="adventure">Adventure</span>
+                <span class="tag" id="comedy">Comedy</span>
+                <span class="tag" id="drama">Drama</span>
+                <span class="tag" id="horror">Horror</span>
+                <span class="tag" id="romance">Romance</span>
+                <span class="tag" id="thriller">Thriller</span>
+                <span class="tag" id="sci-fi">Sci-Fi</span>
+                <span class="tag" id="fantasy">Fantasy</span>
+                <span class="tag" id="mystery">Mystery</span>
+            </div>
+ 
+        </section>
+
+
+        <section class="movies-container" id="movies"></section>
+
+        <div class="pagination" id="pagination"></div>
+
+        
+        
+    </main>
+
+    <footer>
+        <footer-top>
+            <section class="footer-left">
+                
+                <div class="logo">
+                    <a href="../cinecrafter/cinecrafter.html"><img src="../images/icons/logo.png" alt="logo" ></a>
+                </div>
+
+
+                <div class="footer-links">
+                    <div class="cinecrafter-links">
+                        <h2>Cinecrafter</h2>
+                        <ul>
+                            <li><a href="../cinecrafter/cinecarfter.html">Home</a></li>
+                            <li><a href="../cinecrafter/movies.html">Movies</a></li>
+                            <li><a href="../cinecrafter/web_shows.html">Web Series</a></li>
+                            <li><a href="../cinecrafter">TV Shows</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="support-links">
+                        <h2>Support</h2>
+                        <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer-middle">
+                <div class="subscribe-content">
+                    <h2>Subscribe to our streaming alerts</h2>
+                    <!-- <p>Get notified about the latest movies, TV shows and web series.</p> -->
+                    <label for="email">
+                        <input type="email" placeholder=" Your email address" method="post" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%+-]\.[a-z]$" required>
+                        <button id="subscribe-btn" >Subscribe</button>
+                    </label>
+                </div>
+            </section>
+
+
+            <section class="footer-right">
+                <div class="socials">
+                    <h2>Lets Connect!</h2>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" title="youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </section>
+            
+        </footer-top>
+
+        <footer-bottom>
+            <p>&copy; 2025 Cinecrafter. All Rights Reserved.</p>
+        </footer-bottom>
+    </footer>
+
+    <script src="../scripts/header&footer.js">  </script>
+    <script src="../scripts/movies.js">  </script>
+</body>
+</html>

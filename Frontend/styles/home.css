@@ -1,0 +1,56 @@
+body{
+    user-select: none;
+}
+
+
+
+/* Slider */
+.slider{
+    width: 100%;
+    height: 480px;
+    background-color: #1b1b1b;
+    border: #8e8e8e 1px solid;
+    padding-top: 100px;
+}
+.slider img{
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+/* stream-content-section- Top Rated, Trending, Upcoming*/
+
+.stream-content{
+    width: 100%;
+    height: auto;
+    /* background-color: #1b1b1b; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    padding: 80px 100px;
+}
+
+
+/* body { font-family: Arial, sans-serif; background: #121212; color: #fff; } */
+.movies-section  { position: relative; padding: 20px 0; max-width: 1200px; margin: auto; }
+.movies-section h2 { font-size: 24px; margin-bottom: 10px; color: #fff;}
+.controls { z-index: 9; position: absolute; top: 50%; transform: translateY(-50%); width: 100%; display: flex; justify-content: space-between; pointer-events: auto; }
+.scroll-btn {  z-index: 9; background: rgba(0, 0, 0, 0.5); border: none; padding: 10px; color: #fff; font-size: 20px; cursor: pointer;  border-radius: 10px;  /* Enable clicks only on buttons */}
+
+.movies { display: flex; overflow-x: auto; gap: 15px; padding: 10px 0; scroll-behavior: smooth; }
+.movies::-webkit-scrollbar { display: none; }
+.movie-card { width: 200px; flex: 0 0 180px; display: flex; flex-direction: column; align-items: center; transition: transform 0.3s ease; position: relative;}
+.movie-card:hover { transform: scale(1.05); z-index: 5; }
+.movie-card img { width: 180px; height: 260px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
+.movie-info { text-align: center; margin-top: 5px; display: flex; flex-direction: column; align-items: center; }
+.movie-info h3 { width: 200px; font-size: 16px; margin: 5px 0; word-wrap: break-word; overflow: hidden; color: #ccc;}
+.movie-info p { width: 200px; font-size: 14px; color: #ccc; }
+.rating { background: #00d18b; padding: 3px 6px; border-radius: 10px; font-size: 12px;font-weight: bold; margin-top: 5px; text-align: center; position: absolute; top: 20px; left: 10px; }

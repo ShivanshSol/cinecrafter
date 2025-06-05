@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cinecrafter</title>
+    <!-- fev_icon -->
+    <link rel="icon" href="../images/icons/fev_icon.png">
+    <!-- style-links -->
+     <link rel="stylesheet" href="../styles/header&footer.css">
+     <link rel="stylesheet" href="../styles/content.css">
+    <!-- fa-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <!-- top-bar -->
+    <header>
+        <!-- nav-bar -->
+        <nav>
+            <nav-left>
+                <!-- cinecrafter logo -->
+                <div class="logo">
+                    <a href="../index/landing_cinecrafter.html"><img src="../images/icons/logo.png" alt="logo" ></a>
+                </div>
+                <!-- nav menu -->
+                <menu>
+                    <a href="../index/auth_cinecrafter.html">Movies</a>
+                    <a href="../index/auth_cinecrafter.html">Web Series</a>
+                    <a href="../index/auth_cinecrafter.html">TV Shows</a>
+                </menu>
+            </nav-left>
+            <nav-right>
+                <!-- search bar -->
+                <div class="search">
+                    <input id="search-bar" class="search-bar" type="text" placeholder="Search">
+                    <button id="search-btn" class="search-btn" title="Search"><i class="fa-solid fa-magnifying-glass" for="search-bar"></i></button>
+                    <button id="clear-btn" class="clear-btn" title="Clear"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <!-- user icon -->
+                <i class="fa-solid fa-circle-user fa-xl" id="user" onclick="redirect()" ></i>
+            </nav-right>
+        </nav>
+    </header>
+
+            <!-- side menu -->
+    <div class="side-menu-container" id="side-menu-container" onclick="toggleSideMenu()">
+        <div class="side-menu" id="side-menu">
+
+            <ul>
+                <li>My Account</li>
+                <li>Watchlists</li>
+                <li>Bookmarks</li>
+                <li>Settings</li>
+                <li>Help</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <!-- page to top button -->
+    <div class="page-top-btn">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+    <!-- main-content -->
+    <main>
+        <section class="trailer-section">
+            <div class="hider"></div>
+
+            <iframe
+            src="https://www.youtube.com/embed/6txjTWLoSc8?si=1vE1DqR_ZP1evTnL&amp;
+            autoplay=1 &amp;mute=1&amp;controls=0&amp;modestbranding=1&amp;rel=0 &amp;showinfo=0&amp;loop=1 &amp; thumbnails=0&amp;
+            playlist=1vE1DqR_ZP1evTnL&amp;start=33&amp;end=80"
+            title="YouTube video player" frameborder="0"
+            allow="autoplay; encrypted-media;"
+            allowfullscreen>
+            </iframe>
+
+            <!-- <iframe 
+            src="https://player.vimeo.com/video/76979871?autoplay=1&muted=1&background=1&loop=1" 
+            frameborder="0" title="Vimeo video player"
+            allow="autoplay; fullscreen; picture-in-picture" 
+            allowfullscreen>
+            </iframe> -->
+
+        </section>
+
+        <section class="about-section">
+            <div class="about-content">
+                <h1 class="title">Havoc</h1>
+                <div class="about-header">
+                    <!-- <span class="platform">Netflix</span> -->
+                    <span class="year">2025</span>
+                    <span class="rating">English</span>
+                    <span class="main-genre">Action</span>
+                    <span class="duration"> 1hr 40m</span>
+                    <!-- <span class="episodes-seasons"></span> -->
+                    <span class="certificate-rating">R</span>
+                </div>
+                <p class="about">When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.</p>
+                <p class="genre">Genre: Action, Thriller</p>
+                <p class="language">Language: English</p>
+                <p class="release-date">Release Date: April 25, 2025</p>
+                <p class="cast">Cast: Tom Hardy, Timothy Olyphant, Forest Whitaker, and others.</p>
+            </div>
+
+            <div class="about-sidecontent">
+                <div class="rating">
+                    <!-- <h1>Rating</h1> -->
+                    <p class="Imdb">IMDb: 7.0/10</p>
+                    <p class="rotten-tom">Rotten Tomatoes: 85%</p>
+                </div>
+                <div class="action-btns">
+                    <button title="Share" id="shareBtn" class="share-btn btn"><i class="fa-solid fa-share-nodes"></i></button>
+                    <button title="Add to Watchlist" class="add-to-watchlist-btn btn" onclick="addToWatchlist(watchlist)"><i id="watchlist" class="fa-regular fa-square-plus"></i></button>
+                    <button title="Bookmark" class="bookmark-btn btn" onclick="addToBookmark(bookmark)"><i id="bookmark" class="fa-regular fa-bookmark"></i></button>
+                    <button title="Watch On" class="watch-btn" onclick="redirectToWatch()">Watch Now</button>
+                </div>
+                <div class="tags-container">
+                    <button type="button" title="Movie" class="tag">Movie</button>
+                    <button type="button" title="Netflix" class="tag">Netflix</button>
+                    <button type="button" title="Action" class="tag">Action</button>
+                    <button type="button" title="Thriller" class="tag">Thriller</button>
+                    <button type="button" title="2025" class="tag">2025</button>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <section class="comment-section">
+            <h1>Comments</h1>
+            <hr>
+            <div class="comments">
+            </div>
+                
+            <div class="comment-box">
+                <div class="user-comment">
+                    <!-- <img src="../images/icons/user.png" alt="user"> -->
+                    <i class="fa-solid fa-circle-user"></i>
+                    <textarea id="comment" placeholder="Add a comment..." required></textarea>
+                </div>
+                <button id="post-btn" class="post-btn">Post</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <footer-top>
+            <section class="footer-left">
+                
+                <div class="logo">
+                    <a href="../index/cinecrafter.html"><img src="../images/icons/logo.png" alt="logo" ></a>
+                </div>
+
+
+                <div class="footer-links">
+                    <div class="cinecrafter-links">
+                        <h2>Cinecrafter</h2>
+                        <ul>
+                            <li><a href="../index/auth_cinecrafter.html">Home</a></li>
+                            <li><a href="../index/auth_cinecrafter.html">Movies</a></li>
+                            <li><a href="../index/auth_cinecrafter.html">Web Series</a></li>
+                            <li><a href="../index/auth_cinecrafter.html">TV Shows</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="support-links">
+                        <h2>Support</h2>
+                        <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer-middle">
+                <div class="subscribe-content">
+                    <h2>Subscribe to our streaming alerts</h2>
+                    <!-- <p>Get notified about the latest movies, TV shows and web series.</p> -->
+                    <label for="email">
+                        <input type="email" placeholder=" Your email address" method="post" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%+-]\.[a-z]$" required>
+                        <button id="subscribe-btn" >Subscribe</button>
+                    </label>
+                </div>
+            </section>
+
+
+            <section class="footer-right">
+                <div class="socials">
+                    <h2>Lets Connect!</h2>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" title="youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </section>
+            
+        </footer-top>
+
+        <footer-bottom>
+            <p>&copy; 2025 Cinecrafter. All Rights Reserved.</p>
+        </footer-bottom>
+    </footer>
+
+    <script src="../scripts/header&footer.js"></script>
+    <script src="../scripts/content.js"></script>
+</body>
+</html>
